@@ -3,28 +3,28 @@ import { Routes, Route, Link } from "react-router-dom";
 import VLaBBottle1 from "./model-pages/VLaB-bottle-1";
 import BlackSheepShorts from "./model-pages/black-sheep";
 import YogaStudio from "./model-pages/Yoga-studio-base";
-import YogaStudioBackup from "./model-pages/backup-older-pages/Yoga-studio-rapier-1";
+import YogaStudioBackup from "./model-pages/Yoga-studio-rapier-1";
 
 function HomePage() {
   const models = [
     {
       title: "Visma Lease-a-Bike bottle",
-      image: "/images/VLAB-bottle-2.png",
+      image: `${import.meta.env.BASE_URL}images/VLAB-bottle-2.png`,
       link: "/model-1",
     },
     {
       title: "YogaStudio",
-      image: "/images/yoga-studio-menu-pic.jpg",
+      image: `${import.meta.env.BASE_URL}images/yoga-studio-menu-pic.jpg`,
       link: "/model-2",
     },
     {
       title: "Black Sheep Shorts",
-      image: "/images/Black sheep shorts image 2.jpg",
+      image: `${import.meta.env.BASE_URL}images/Black sheep shorts image 2.jpg`,
       link: "/model-3",
     },
     {
       title: "YogaStudio backup",
-      image: "/images/yoga-studio-menu-pic.jpg",
+      image: `${import.meta.env.BASE_URL}images/yoga-studio-menu-pic.jpg`,
       link: "/model-4",
     },
 

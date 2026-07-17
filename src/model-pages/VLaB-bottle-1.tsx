@@ -16,7 +16,7 @@ function BottleModel({
   bigCapRef: React.MutableRefObject<Object3D | null>;
   bigCapBaseYRef: React.MutableRefObject<number | null>;
 }) {
-  const model = useGLTF("/models/VLAB-bottle-8.glb");
+  const model = useGLTF(`${import.meta.env.BASE_URL}/models/VLAB-bottle-8.glb`);
 
   useEffect(() => {
     model.scene.traverse((child) => {

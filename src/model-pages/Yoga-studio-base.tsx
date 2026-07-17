@@ -16,17 +16,21 @@ import gsap from "gsap";
 ========================================= */
 
 function YogaStudio({ onShelfReady }: { onShelfReady?: (mesh: THREE.Mesh) => void }) {
-  const studio = useGLTF("/models/yoga-studio-lite-2.glb");
+  const studio = useGLTF(
+    `${import.meta.env.BASE_URL}/models/yoga-studio-lite-2.glb`,
+  );
 
   // TEXTURES
-  const floorTexture = useTexture("/textures/laminate_floor_03_diff_4k.jpg");
+  const floorTexture = useTexture(
+    `${import.meta.env.BASE_URL}/textures/laminate_floor_03_diff_4k.jpg`,
+  );
 
   const shelfTexture = useTexture(
-    "/textures/wood_cabinet_worn_long_diff_1k.jpg",
+    `${import.meta.env.BASE_URL}/textures/wood_cabinet_worn_long_diff_1k.jpg`,
   );
 
   const wallTexture = useTexture(
-    "/textures/medieval_red_brick_1k.blend/textures/medieval_red_brick_diff_1k.jpg",
+    `${import.meta.env.BASE_URL}/textures/medieval_red_brick_1k.blend/textures/medieval_red_brick_diff_1k.jpg`,
   );
 
   const shelfRef = useRef<THREE.Mesh>(null);
@@ -89,7 +93,7 @@ function YogaStudio({ onShelfReady }: { onShelfReady?: (mesh: THREE.Mesh) => voi
 ========================================= */
 
 function YogaMat() {
-  const mat = useGLTF("/models/yoga-mat-5.glb");
+  const mat = useGLTF(`${import.meta.env.BASE_URL}/models/yoga-mat-5.glb`);
   // mat.scene.traverse((child) => {
   // console.log(child.name, child);
   //   if (!(child instanceof THREE.Mesh)) return;
@@ -106,11 +110,11 @@ function YogaMat() {
 
 function YogaBlocks({ shelf }: { shelf?: THREE.Object3D | null }) {
   const blockFiles = [
-    "/models/yoga-block-cork.glb",
-    "/models/yoga-block-camo-blue.glb",
-    "/models/yoga-block-cork.glb",
-    "/models/yoga-block-camo-green.glb",
-    "/models/yoga-block-camo-pink.glb",
+    `${import.meta.env.BASE_URL}/models/yoga-block-cork.glb`,
+    `${import.meta.env.BASE_URL}/models/yoga-block-camo-blue.glb`,
+    `${import.meta.env.BASE_URL}/models/yoga-block-cork.glb`,
+    `${import.meta.env.BASE_URL}/models/yoga-block-camo-green.glb`,
+    `${import.meta.env.BASE_URL}/models/yoga-block-camo-pink.glb`,
   ];
 
   const models = useGLTF(blockFiles);

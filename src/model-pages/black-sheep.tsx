@@ -6,7 +6,9 @@ import { Suspense } from "react";
 import { Link } from "react-router-dom";
 
 function ShortsModel() {
-  const { scene } = useGLTF("/models/BLACK SHEEP BIKE SHORTS 5.glb");
+  const { scene } = useGLTF(
+    `${import.meta.env.BASE_URL}/models/BLACK SHEEP BIKE SHORTS 5.glb`,
+  );
 
   return (
     <primitive
