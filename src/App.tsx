@@ -3,7 +3,10 @@ import { Routes, Route, Link } from "react-router-dom";
 import VLaBBottle1 from "./model-pages/VLaB-bottle-1";
 import BlackSheepShorts from "./model-pages/black-sheep";
 import YogaStudio from "./model-pages/Yoga-studio-base";
-import YogaStudioBackup from "./model-pages/Yoga-studio-rapier-1";
+
+import RVC from "./model-pages/RVC-map-1.tsx";
+
+
 
 function HomePage() {
   const models = [
@@ -23,8 +26,8 @@ function HomePage() {
       link: "/model-3",
     },
     {
-      title: "YogaStudio backup",
-      image: `${import.meta.env.BASE_URL}images/yoga-studio-menu-pic.jpg`,
+      title: "Richmond Valley Council map redraw",
+      image: `${import.meta.env.BASE_URL}images/RVC-menu-image-1.jpg`,
       link: "/model-4",
     },
 
@@ -63,7 +66,7 @@ export default function App() {
       <Route path="/model-1" element={<VLaBBottle1 />} />
       <Route path="/model-2" element={<YogaStudio />} />
       <Route path="/model-3" element={<BlackSheepShorts />} />
-      <Route path="/model-4" element={<YogaStudioBackup />} />
+      <Route path="/model-4" element={<RVC />} />
     </Routes>
   );
 }
