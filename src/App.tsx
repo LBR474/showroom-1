@@ -16,7 +16,7 @@ function HomePage() {
       link: "/model-1",
     },
     {
-      title: "YogaStudio",
+      title: "Yoga Studio",
       image: `${import.meta.env.BASE_URL}images/yoga-studio-menu-pic.jpg`,
       link: "/model-2",
     },
