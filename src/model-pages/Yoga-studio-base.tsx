@@ -110,7 +110,7 @@ function YogaMat() {
 
 function YogaBlocks({ shelf }: { shelf?: THREE.Object3D | null }) {
   const blockFiles = [
-    `${import.meta.env.BASE_URL}/models/yoga-block-cork.glb`,
+    // `${import.meta.env.BASE_URL}/models/yoga-block-cork.glb`,
     `${import.meta.env.BASE_URL}/models/yoga-block-camo-blue.glb`,
     `${import.meta.env.BASE_URL}/models/yoga-block-cork-small-tex-2.glb`,
     `${import.meta.env.BASE_URL}/models/yoga-block-camo-green.glb`,
