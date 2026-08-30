@@ -2,6 +2,8 @@ import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import VLaBBottle1 from "./model-pages/VLaB-bottle-1";
 import BlackSheepShorts from "./model-pages/black-sheep";
+import Growplay4 from './model-pages/GrowPlay-4'
+import FStroke from './model-pages/FStroke'
 import YogaStudio from "./model-pages/Yoga-studio-base";
 
 import RVC from "./model-pages/RVC-map-1.tsx";
@@ -26,9 +28,19 @@ function HomePage() {
       link: "/model-3",
     },
     {
-      title: "Richmond Valley Council map redraw",
+      title: "2D - Inkscape, Richmond Valley Council map redraw",
       image: `${import.meta.env.BASE_URL}images/RVC-menu-image-1.jpg`,
       link: "/model-4",
+    },
+    {
+      title: "GrowPlay monkey bars",
+      image: `${import.meta.env.BASE_URL}images/GP-menu-shot-1.jpg`,
+      link: "/model-5",
+    },
+    {
+      title: "4Stroke 3D logo",
+      image: `${import.meta.env.BASE_URL}images/FStroke-1.jpg`,
+      link: "/model-6",
     },
 
     // {
@@ -67,6 +79,8 @@ export default function App() {
       <Route path="/model-2" element={<YogaStudio />} />
       <Route path="/model-3" element={<BlackSheepShorts />} />
       <Route path="/model-4" element={<RVC />} />
+      <Route path="/model-5" element={<Growplay4 />} />
+      <Route path="/model-6" element={<FStroke />} />
     </Routes>
   );
 }
