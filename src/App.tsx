@@ -7,6 +7,7 @@ import FStroke from './model-pages/FStroke'
 import YogaStudio from "./model-pages/Yoga-studio-base";
 
 import RVC from "./model-pages/RVC-map-1.tsx";
+import Arova from "./model-pages/Arova.tsx";
 
 
 
@@ -41,6 +42,13 @@ function HomePage() {
       title: "4Stroke 3D logo",
       image: `${import.meta.env.BASE_URL}images/FStroke-1.jpg`,
       link: "/model-6",
+    },
+    {
+      title: "Arova",
+      image: `${
+        import.meta.env.BASE_URL
+      }images/Arova-menu-image-1.jpg`,
+      link: "/model-7",
     },
 
     // {
@@ -81,6 +89,7 @@ export default function App() {
       <Route path="/model-4" element={<RVC />} />
       <Route path="/model-5" element={<Growplay4 />} />
       <Route path="/model-6" element={<FStroke />} />
+      <Route path="/model-7" element={<Arova />} />
     </Routes>
   );
 }
