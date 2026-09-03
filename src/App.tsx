@@ -9,6 +9,7 @@ import YogaStudio from "./model-pages/Yoga-studio-base";
 import RVC from "./model-pages/RVC-map-1.tsx";
 import Arova from "./model-pages/Arova.tsx";
 import Stateside from "./model-pages/Stateside.tsx";
+import BrickX from "./model-pages/BrickX.tsx";
 
 
 
@@ -54,7 +55,12 @@ function HomePage() {
       title: "Stateside",
       image: `${import.meta.env.BASE_URL}images/Stateside-menu-image-1.jpg`,
       link: "/model-8",
-    }
+    },
+    {
+      title: "BrickX",
+      image: `${import.meta.env.BASE_URL}images/BrickX-menu-image-1.jpg`,
+      link: "/model-9",
+    },
 
     // {
     //   title: "YogaStudio backup",
@@ -96,6 +102,7 @@ export default function App() {
       <Route path="/model-6" element={<FStroke />} />
       <Route path="/model-7" element={<Arova />} />
       <Route path="/model-8" element={<Stateside />} />
+      <Route path="/model-9" element={<BrickX />} />
     </Routes>
   );
 }
