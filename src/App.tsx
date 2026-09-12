@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
-import VLaBBottle1 from "./model-pages/VLaB-bottle-1";
+import VLaBBottle1 from "./model-pages/VLaB-bottle-1/VLaB-bottle-1.tsx";
 import BlackSheepShorts from "./model-pages/black-sheep";
 import Growplay4 from './model-pages/GrowPlay-4'
 import FStroke from './model-pages/FStroke'

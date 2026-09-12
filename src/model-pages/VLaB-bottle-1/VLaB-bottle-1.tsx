@@ -5,6 +5,8 @@ import { Mesh, Object3D } from "three";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
+import './VLaB-bottle-1.css'
+
 function BottleModel({
   smallCapRef,
   smallCapBaseYRef,
@@ -207,29 +209,15 @@ const handleToggleBigCap = () => {
 
       {/* SMALL CAP BUTTON */}
       <div
+        className="small-cap-button"
         onClick={handleToggleSmallCap}
         onMouseEnter={() => (document.body.style.cursor = "pointer")}
         onMouseLeave={() => (document.body.style.cursor = "default")}
         style={{
-          position: "absolute",
-          bottom: "40px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          zIndex: 10,
-
-          padding: "14px 22px",
+          
           background: smallCapRaised ? "#991b1b" : "#2563eb",
           color: "white",
-          borderRadius: "12px",
-
-          fontFamily: "Arial",
-          fontSize: "16px",
-          fontWeight: 600,
-
-          cursor: "pointer",
-          userSelect: "none",
-
-          boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
+          
         }}
       >
         {smallCapRaised ? "Lower Drinking Cap" : "Raise Drinking Cap"}
@@ -237,29 +225,14 @@ const handleToggleBigCap = () => {
 
       {/* BIG CAP BUTTON */}
       <div
+        className="big-cap-button"
         onClick={handleToggleBigCap}
         onMouseEnter={() => (document.body.style.cursor = "pointer")}
         onMouseLeave={() => (document.body.style.cursor = "default")}
         style={{
-          position: "absolute",
-          bottom: "100px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          zIndex: 10,
-
-          padding: "14px 22px",
+          
           background: bigCapUnscrewed ? "#7c2d12" : "#16a34a",
-          color: "white",
-          borderRadius: "12px",
-
-          fontFamily: "Arial",
-          fontSize: "16px",
-          fontWeight: 600,
-
-          cursor: "pointer",
-          userSelect: "none",
-
-          boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
+         
         }}
       >
         {bigCapUnscrewed ? "Screw bottle top back on" : "Unscrew bottle top"}

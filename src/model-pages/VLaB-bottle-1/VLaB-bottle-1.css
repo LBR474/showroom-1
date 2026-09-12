@@ -1,0 +1,39 @@
+.small-cap-button,
+.big-cap-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  padding: 14px 22px;
+  color: white;
+  border-radius: 12px;
+
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  user-select: none;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.small-cap-button {
+  bottom: 40px;
+}
+
+.big-cap-button {
+  bottom: 100px;
+}
+
+
+@media (max-width: 379px) {
+
+  .small-cap-button,
+  .big-cap-button {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+
+}
