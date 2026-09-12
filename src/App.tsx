@@ -9,7 +9,7 @@ import YogaStudio from "./model-pages/Yoga-studio-base";
 import RVC from "./model-pages/RVC-map-1.tsx";
 import Arova from "./model-pages/Arova.tsx";
 import HK_1 from "./model-pages/HK_1.tsx";
-import BrickX from "./model-pages/BrickX.tsx";
+//import BrickX from "./model-pages/BrickX.tsx";
 
 
 
