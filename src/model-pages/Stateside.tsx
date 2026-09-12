@@ -29,8 +29,8 @@ function Stateside() {
       </Link>
 
       <iframe
-        src="https://lbr474.github.io/Stateside_2/"
-        title="Richmond Valley Council Map Redraw"
+        src="https://lbr474.github.io/Halcyon-Knights-1/"
+        title="Halcyon Knights dynamic logo"
         style={{
           width: "100%",
           height: "100%",
