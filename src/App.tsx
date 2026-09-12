@@ -13,6 +13,8 @@ import HK_1 from "./model-pages/HK_1.tsx";
 
 
 
+
+
 function HomePage() {
   const models = [
     {
@@ -31,7 +33,7 @@ function HomePage() {
       link: "/model-3",
     },
     {
-      title: "2D - Inkscape, Richmond Valley Council map redraw",
+      title: "Richmond Valley Council",
       image: `${import.meta.env.BASE_URL}images/RVC-menu-image-1.jpg`,
       link: "/model-4",
     },
@@ -75,18 +77,21 @@ function HomePage() {
   ];
 
   return (
-    <main className="showroom">
-      <h1>Blender models show room</h1>
+    <>
+      
+      <main className="showroom">
+        <div className="titler">Projects</div>
 
-      <section className="gallery">
-        {models.map((model, index) => (
-          <Link key={index} to={model.link} className="gallery-item">
-            <img src={model.image} alt={model.title} />
-            <p>{model.title}</p>
-          </Link>
-        ))}
-      </section>
-    </main>
+        <section className="gallery">
+          {models.map((model, index) => (
+            <Link key={index} to={model.link} className="gallery-item">
+              <img src={model.image} alt={model.title} />
+              <p>{model.title}</p>
+            </Link>
+          ))}
+        </section>
+      </main>
+    </>
   );
 }
 
