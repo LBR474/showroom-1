@@ -1,8 +1,8 @@
 "use client";
 
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { Link } from "react-router-dom";
 import * as THREE from "three";
 
@@ -79,6 +79,22 @@ function ClimbingFrameModel() {
   );
 }
 
+function ResponsiveCamera() {
+  const { camera, size } = useThree();
+
+  useEffect(() => {
+    if (size.width <= 800) {
+      camera.position.set(0, 1, 10);
+    } else {
+      camera.position.set(0, 1, 8);
+    }
+
+    camera.updateProjectionMatrix();
+  }, [camera, size.width]);
+
+  return null;
+}
+
 // Optional: Preload the model
 useGLTF.preload("/GrowPlay-4.glb");
 
@@ -110,6 +126,24 @@ export default function growplay4() {
         ← Back to Showroom
       </Link>
 
+      <div
+        style={{
+          position: "absolute",
+          top: "120px",
+          right: "20px",
+          zIndex: 10,
+          padding: "12px 18px",
+          background: "#22fa05",
+          color: "black",
+          borderRadius: "10px",
+          border: "1px solid #333",
+          fontFamily: "Arial, sans-serif",
+          fontSize: "14px",
+        }}
+      >
+        Mouse to scroll and zoom
+      </div>
+
       <Canvas
         camera={{
           position: [0, 1, 8],
@@ -117,6 +151,8 @@ export default function growplay4() {
         }}
       >
         <Suspense fallback={null}>
+          <ResponsiveCamera />
+
           <ambientLight intensity={1} />
 
           <directionalLight position={[5, 5, 5]} intensity={2} />
