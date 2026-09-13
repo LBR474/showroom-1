@@ -52,7 +52,7 @@ body,
 }
 
 
-@media (max-width: 379px) {
+@media (max-width: 800px) {
 
   .showroom {
     padding: 2rem 1rem;

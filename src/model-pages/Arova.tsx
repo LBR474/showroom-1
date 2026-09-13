@@ -30,7 +30,7 @@ function Arova() {
 
       <iframe
         src="https://lbr474.github.io/arova-1/"
-        title="Richmond Valley Council Map Redraw"
+        title="Arova bathrooms"
         style={{
           width: "100%",
           height: "100%",
