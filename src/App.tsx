@@ -54,7 +54,9 @@ function HomePage() {
     },
     {
       title: "Arova",
-      image: `${import.meta.env.BASE_URL}images/Arova-menu-image-1.jpg`,
+      image: `${
+        import.meta.env.BASE_URL
+      }images/Arova-menu-image-1.avif`,
       link: "/model-7",
     },
 
@@ -89,7 +91,12 @@ function HomePage() {
         <section className="gallery">
           {models.map((model, index) => (
             <Link key={index} to={model.link} className="gallery-item">
-              <img src={model.image} alt={model.title} />
+              <img
+                src={model.image}
+                alt={model.title}
+                loading={index >= 4 ? "lazy" : undefined}
+                decoding={index >= 4 ? "async" : undefined}
+              />
               <p>{model.title}</p>
             </Link>
           ))}
