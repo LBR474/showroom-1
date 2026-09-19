@@ -1,4 +1,4 @@
-import{r as e,s as t,t as n,u as r}from"./jsx-runtime-CYw-Im19.js";import{a as i,n as a,t as o}from"./OrbitControls-C-HClrqf.js";import{t as s}from"./Environment-C6iVRj83.js";var c=r(t(),1),l=n();function u(){let{scene:e}=a(`/showroom-1/models/Four_stroke6.glb`);return(0,l.jsx)(`primitive`,{object:e,scale:1,position:[0,0,0],rotation:[0,0,0]})}function d(){return(0,l.jsxs)(`div`,{style:{width:`100vw`,height:`100vh`,position:`relative`,background:`
+import{r as e,s as t,t as n,u as r}from"./jsx-runtime-CYw-Im19.js";import{a as i,n as a,t as o}from"./OrbitControls-CA8-NnxG.js";import{t as s}from"./Environment-BCNLWwV2.js";var c=r(t(),1),l=n();function u(){let{scene:e}=a(`/showroom-1/models/Four_stroke6.glb`);return(0,l.jsx)(`primitive`,{object:e,scale:1,position:[0,0,0],rotation:[0,0,0]})}function d(){return(0,l.jsxs)(`div`,{style:{width:`100vw`,height:`100vh`,position:`relative`,background:`
           linear-gradient(
             to bottom,
             #55c7df 0%,
