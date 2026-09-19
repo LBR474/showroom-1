@@ -13,8 +13,8 @@ function Stateside() {
         to="/"
         style={{
           position: "absolute",
-          top: "20px",
-          left: "300px",
+          top: "120px",
+          left: "20px",
           zIndex: 10,
           padding: "12px 18px",
           background: "#111",
