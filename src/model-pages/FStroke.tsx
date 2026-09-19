@@ -4,15 +4,11 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 import { Suspense } from "react";
 import { Link } from "react-router-dom";
-//import * as THREE from "three";
 
 function FourStrokeModel() {
   const { scene } = useGLTF(
     import.meta.env.BASE_URL + "models/Four_stroke6.glb",
   );
-
- 
- 
 
   return (
     <primitive
@@ -23,8 +19,6 @@ function FourStrokeModel() {
     />
   );
 }
-
-useGLTF.preload(import.meta.env.BASE_URL + "models/Four_stroke6.glb");
 
 export default function FStroke() {
   return (
@@ -91,7 +85,6 @@ export default function FStroke() {
       >
         <Suspense fallback={null}>
           <ambientLight intensity={1} />
-
           <directionalLight position={[5, 5, 5]} intensity={2} />
 
           <FourStrokeModel />
